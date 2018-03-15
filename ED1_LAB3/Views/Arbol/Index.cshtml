@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Contenido del Arbol</h2>
+@Html.TextAreaFor(m => TempData["Arbol"])
+
+<h4></h4>
+<h4></h4>
+<br />
+
+@using (Html.BeginForm("Eliminar", "Arbol"))
+{
+    <label>Ingrese nombre del primer país...</label>
+    <br />
+    @Html.TextBox("NombrePais1")
+    <br />
+
+    <label>Ingrese nombre del segundo país...</label>
+    <br />
+    @Html.TextBox("NombrePais2")
+    <br />
+
+    <label>Ingrese el nombre del estadio...</label>
+    <br />
+    @Html.TextBox("EstadioPais")
+    <br />
+
+    <label>Ingrese el número de partido...</label>
+    <br />
+    @Html.TextBox("NoPartido")
+    <br />
+
+    <label>Ingrese la fecha de juego...</label>
+    <br />
+    @Html.TextBox("FePartido")
+    <br />
+
+
+    <label>Ingrese grupo del pais...</label>
+    <br />
+    @Html.TextBox("GrupoPais")
+
+    <input type="submit" value="Eliminar" />
+
+
+
+
+}
+
+<br />
+@using (Html.BeginForm("Insertar", "Arbol"))
+{
+    <label>Ingrese nombre del primer país...</label>
+    <br />
+    @Html.TextBox("NombrePais1")
+    <br />
+
+    <label>Ingrese nombre del segundo país...</label>
+    <br />
+    @Html.TextBox("NombrePais2")
+    <br />
+
+    <label>Ingrese el nombre del estadio...</label>
+    <br />
+    @Html.TextBox("EstadioPais")
+    <br />
+
+    <label>Ingrese el número de partido...</label>
+    <br />
+    @Html.TextBox("NoPartido")
+    <br />
+
+    <label>Ingrese la fecha de juego...</label>
+    <br />
+    @Html.TextBox("FePartido")
+    <br />
+
+
+    <label>Ingrese grupo del pais...</label>
+    <br />
+    @Html.TextBox("GrupoPais")
+
+
+
+
+    <input type="submit" value="Ingresar" />
+}
+

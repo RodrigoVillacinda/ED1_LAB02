@@ -1,0 +1,25 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Laboratorio #3";
+}
+<h2>Seleccione el tipo de Arbol que desea usar</h2>
+<h4></h4>
+<br>
+@Html.ActionLink("Arboles AVL", "index", "Arbol", null, new { @class = "btn btn-primary" })
+
+@using (Html.BeginForm("index", "Arbol", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    
+    <input type="file" name="archivoTXT" />
+    <input type="submit" value="Cargar" />
+
+
+
+    <br />
+    <b>@ViewBag.mensaje</b>
+
+}
+
+
+<h4></h4>
